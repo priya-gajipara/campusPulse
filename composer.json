@@ -1,0 +1,16 @@
+{
+    "name": "mggga/php_project",
+    "autoload": {
+        "psr-4": {
+            "Mggga\\PhpProject\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "priya"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
