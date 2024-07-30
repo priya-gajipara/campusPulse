@@ -1,6 +1,6 @@
 <?php
 require '../config/db.php';
-$title = 'Users';
+$title='';
 $sql="SELECT * FROM  users";
 $res=$conn->query($sql);
 ob_start();
@@ -23,8 +23,7 @@ ob_start();
                 <th>Gender</th>
                 <th>Address</th>
                 <th>Year of Study</th>
-                <th>Edit</th>
-                <th>Delete</th>
+                
 
             </tr>
 
@@ -48,20 +47,8 @@ ob_start();
                      <td> $row[phone_no] </td>
                      <td> $row[gender] </td>
                      <td> $row[address] </td>
-                     <td> $row[year_of_study] </td>
-                     
-                    
-                     </td>
-                     <td>
-                     <a href='update.php?id=$row[ID]' class='btn btn-success' >edit</a>              
-                
-                     </td> 
-                     <td><a class='btn btn-danger' href='delete.php?id=$row[ID]'>delete</a></td>
-                     <td>";
-
+                     <td> $row[year_of_study] </td>";
                     }
-                    
-                
                ?>
         </td>
 

@@ -23,7 +23,7 @@ ob_start();
                                                     echo'<h5 class=" mb-0 font-weight-bold text-gray-800">'.$total.'</h5>';
 
                                                    }
-                                                  else
+                                                   else
                                                    {
                                                         echo'<h5 class=" mb-0 font-weight-bold text-gray-800">no data</h5>';
                                                    }
@@ -43,18 +43,6 @@ ob_start();
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">
                                 Status
-                                <?php
-                                // $sql = "SELECT status FROM users where status=1";
-                                // $que=mysqli_query($conn,$sql);
-                                // if($tot=mysqli_num_rows($que))
-                                // {
-                                // echo'<h5 class="h5 mb-0 font-weight-bold text-gray-800">'.$tot.'</h5>';
-                                // }
-                                // else
-                                // {
-                                // echo'<h5 class="h5 mb-0 font-weight-bold text-gray-800">no data</h5>';   
-                                // }
-                                ?>
                             </div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">
                             </div>

@@ -1,11 +1,7 @@
 <?php
-require 'vendor/autoload.php';
-require 'config/db.php';
-// if(!isset($_SESSION['id']))
-// {
-//     header('location:page.php');
-//     exit;
-// }
+require '../vendor/autoload.php';
+require '../config/db.php';
+$title='';
 
 ob_start();
 
@@ -16,7 +12,7 @@ ob_start();
             <div class="card">
                 <div class="card-header">user</div>
                 <div class="card-body">
-                    <form action="form2.php" method="POST">
+                    <form action="form.php" method="POST">
 
                         ID:<br><input type="text" name="id"><br><br>
 
@@ -29,13 +25,15 @@ ob_start();
                         Email-Id: <input type="email" class="form-control" placholder="name@gmail.com" name="email"><br>
 
                         Password:<br><input type="text" class="from-control" name="pass">
-                        <div class="form-text">
-                            password must contain 5 digits
-                        </div><br>
-
-                        
-                       
-                        Role_ID: <br><input type="text" name="role_id"><br><br>
+                        <div class="form-text"> password must contain 5 digits</div><br>
+                                              
+                        Role_ID: <br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="role_id" id="student" value="1">
+                        <label class="form-check-label" for="student">
+                            Student
+                        </label>
+                    </div>
                        
                         date of birth: <br><input type="text" name="dob"><br><br>
 
@@ -64,6 +62,6 @@ ob_start();
 </html>
 <?php
 $content=ob_get_clean();
-include_once __DIR__.'/layout/app_layout2.php';
+include_once __DIR__.'/../layout/app_layout2.php';
 
 ?>

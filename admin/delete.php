@@ -1,5 +1,6 @@
 <?php
-include('config/db.php');
+require '../config/db.php';
+
 
 if(isset($_GET['id']))
 {

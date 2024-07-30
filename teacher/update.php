@@ -1,6 +1,5 @@
 <?php
-require '../config/db.php';
-$title='';
+include('../config/db.php');
 
 $id=$_GET['id'];
 $sql="SELECT * FROM users where id=$id";

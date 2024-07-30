@@ -47,17 +47,17 @@
                                                     </div>
                                                 </div>
                                             <div class="mt-4 mb-0">
-                                                <div class="d-grid"><a class="btn btn-primary btn-block" href="page.php">Create Account</a></div>
+                                                <div class="d-grid"><a class="btn btn-primary btn-block" href="login_page.php">Create Account</a></div>
                                             </div>
                                         </form>
                                     </div>
                                     <div class="card-footer text-center py-3">
-                                        <div class="small"><a href="page.php">Have an account? Go to login</a></div>
+                                        <div class="small"><a href="login_page.php">Have an account? Go to login</a></div>
                                     </div>
                                     <div>
-                                <div class="card-footer text-center py-3">
+                                <!-- <div class="card-footer text-center py-3">
                                 <a href="index.php" type="submit" class="btn btn-primary" value="cancel">cancel</a>
-                            </div>
+                                </div> -->
                                 </div>
                             </div>
                         </div>

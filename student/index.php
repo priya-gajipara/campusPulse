@@ -23,7 +23,7 @@ ob_start();
                                                     echo'<h5 class=" mb-0 font-weight-bold text-gray-800">'.$total.'</h5>';
 
                                                    }
-                                                  else
+                                                   else
                                                    {
                                                         echo'<h5 class=" mb-0 font-weight-bold text-gray-800">no data</h5>';
                                                    }

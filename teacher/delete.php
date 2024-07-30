@@ -10,7 +10,7 @@ if(isset($_GET['id']))
 
         if($res)
         {
-            // echo "deleted successfully";
+
             header('location:user.php');
         }
         else

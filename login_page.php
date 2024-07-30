@@ -4,7 +4,6 @@ include('config/db.php');
 
 
 ob_start();
-session_start();
 ?>
 
 
@@ -19,7 +18,7 @@ session_start();
                                 <h3 class="text-center  font-weight-light my-4">Login</h3>
                             </div>
                             <div class="card-body ">
-                                <form action="login.php" method="POST">
+                                <form action="login_verify.php" method="POST">
                                     <div class="form-floating mb-3">
                                         <input class="form-control" id="email" type="email" name="email"
                                             placeholder="name@example.com" />
@@ -59,10 +58,7 @@ session_start();
                                 <div class="small"><a href="register.php">Need an account? Sign up!</a></div>
                             </div>
 
-                            <div>
-                                <div class="card-footer text-center py-3">
-                                <a href="index.php" type="submit" class="btn btn-primary" value="cancel">cancel</a>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
