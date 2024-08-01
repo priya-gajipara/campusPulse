@@ -56,6 +56,5 @@ $result = mysqli_query($conn, $qry);
 </section>
 <?php
 $content = ob_get_clean();
-
 include_once __DIR__ . '/../layout/app_layout2.php';
 ?>

@@ -1,5 +1,3 @@
-
-
 <div id="layoutSidenav_nav">
     <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
         <div class="sb-sidenav-menu">
@@ -16,16 +14,16 @@
                 </a>
                 <?php
             }?>
-            <?php if($_SESSION['role_id']==1)
+                <?php if($_SESSION['role_id']==1)
                 {?>
                 <a class="nav-link" href="personal_info.php">
                     <div class="sb-nav-link-icon"></div>
-                    Personal
+                    Personal Info
                 </a>
                 <?php
             }?>
-            
-            <?php if($_SESSION['role_id']==1)
+               
+                <?php if($_SESSION['role_id']==1)
                 {?>
                 <a class="nav-link" href="attendence_view.php">
                     <div class="sb-nav-link-icon"></div>
@@ -33,8 +31,16 @@
                 </a>
                 <?php
             }?>
+            <?php if($_SESSION['role_id']==1)
+                {?>
+                <a class="nav-link" href="submit_assign.php">
+                    <div class="sb-nav-link-icon"></div>
+                     Submit Assignment
+                </a>
+                <?php
+            }?>
 
-            <?php if($_SESSION['role_id']==2)
+                <?php if($_SESSION['role_id']==2)
                 {?>
                 <a class="nav-link" href="attendence.php">
                     <div class="sb-nav-link-icon"></div>
@@ -42,19 +48,32 @@
                 </a>
                 <?php
             }?>
-
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >Pages</a>
-                <ul class="dropdown-menu dropdown-menu-end " aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="../login_page.php">Login</a></li>
-                    <li><a class="dropdown-item" href="../register.php">Register</a></li>
-                </ul>
-            </li>
+                <?php if($_SESSION['role_id']==2)
+                {?>
+                <a class="nav-link" href="assignment.php">
+                    <div class="sb-nav-link-icon"></div>
+                    Assignment
+                </a>
+                <?php
+            }?>
+            
+            <?php if($_SESSION['role_id']==2)
+            {?>
+            <a class="nav-link" href="grade_assignment.php">
+                <div class="sb-nav-link-icon"></div>
+                Assignment Grade
+            </a>
+            <?php
+        }?>
+                <a class="nav-link" href="../login_page.php">
+                    <div class="sb-nav-link-icon"></div>
+                    Log-In
+                </a>
             </div>
         </div>
-                <div class="sb-sidenav-footer">
-                    <div class="small">Logged in as:</div>
-                    <?php 
+        <div class="sb-sidenav-footer">
+            <div class="small">Logged in as:</div>
+            <?php 
                      if(isset($_SESSION['fname']))
                      {
                         echo $_SESSION['fname'];
@@ -72,7 +91,7 @@
                         echo "(admin)";
                      }
                     ?>
-                </div>
-                
+        </div>
+
     </nav>
 </div>
