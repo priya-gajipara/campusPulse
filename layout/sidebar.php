@@ -56,12 +56,28 @@
                 </a>
                 <?php
             }?>
-            
+
             <?php if($_SESSION['role_id']==2)
             {?>
             <a class="nav-link" href="grade_assignment.php">
                 <div class="sb-nav-link-icon"></div>
                 Assignment Grade
+            </a>
+            <?php
+        }?>
+            <?php if($_SESSION['role_id']==3)
+            {?>
+            <a class="nav-link" href="department.php">
+                <div class="sb-nav-link-icon"></div>
+                Department
+            </a>
+            <?php
+        }?>
+            <?php if($_SESSION['role_id']==3)
+            {?>
+            <a class="nav-link" href="classes.php">
+                <div class="sb-nav-link-icon"></div>
+                Class
             </a>
             <?php
         }?>

@@ -46,7 +46,7 @@ ob_start();
                                 <td><?php echo $row['submission_date']; ?></td>
                                 <td><a href="upload_assignment/<?php echo $row['file_path']; ?>" target="_blank">View File</a></td>
                                 <td>
-                                    <input type="number" name="marks[<?php echo $row['submission_id']; ?>]" value="<?php echo $row['marks']; ?>" class="form-control" required>
+                                    <input type="text" name="marks[<?php echo $row['submission_id']; ?>]" value="<?php echo $row['marks']; ?>" class="form-control" required>
                                 </td>
                                 <td>
                                     <textarea name="feedback[<?php echo $row['submission_id']; ?>]" class="form-control" required><?php echo $row['feedback']; ?></textarea>
